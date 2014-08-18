@@ -1,0 +1,584 @@
+
+/* ===========================================================================*/
+/* Page Stuff */
+/* ===========================================================================*/
+@media screen and (-webkit-min-device-pixel-ratio:0) { 	body { text-rendering:auto; } }
+
+html { min-height: 600px; min-width: 674px;  }
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,label, button,textarea,p,blockquote,th,td,a {
+	margin: 0 auto; 	padding: 0; 	border-width: 0; text-decoration: none;
+}
+body {
+	font-family:  ubuntu, Helvetica Neue, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.2;
+	word-wrap: break-word;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
+textarea:focus, input:focus{ outline: 0; }
+.mainContainer{ min-height: 100%; min-width: 100%; z-index: 1; }
+.effortForumContainer{
+	text-align:center;
+    height:50px;
+    width:430px;
+}
+.forumContainer{
+	margin: auto;
+}
+
+#page {
+	width: 100%;
+	height: 100%;
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #ffffff; /* #2B3E50 */
+    background-image: url("../images/home_bg.jpg");
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-size: cover !important;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: none;
+}
+
+#main_page { width: 840px; min-width: 840px; height: 100%; padding-top: 20px; margin: 0 auto;}
+#page_content{ width: 100%; height: 660px;}
+
+#navigation_bar { height: 124px; width: 100%; background-image: none; border-style: none; border-color: transparent; background-color: #FFFFFF; }
+#navbar_fitter { height: 123px; width: 840px; margin: 0 auto; }
+
+.row { float: left; margin-bottom: 20px; }
+
+table { border-collapse: collapse;	border-spacing: 0; }
+fieldset,img { border: 0; }
+address,caption,cite,code,dfn,em,strong,th,var,optgroup { 	font-style: inherit; font-weight: inherit; }
+del,ins { text-decoration: none; }
+li { list-style: none; }
+caption,th { 	text-align: left; }
+h1,h2,h3,h4,h5,h6 { 	font-size: 100%; 	font-weight: inherit; }
+input,button,textarea,select,optgroup,option { 	font-family: inherit; 	font-size: inherit;	font-style: inherit; font-weight: inherit; }
+
+/* ===========================================================================*/
+/* Navigation Stuff */
+/* ===========================================================================*/
+
+ /* Resets for ul and li in menus */
+.MenuBar  .MenuBarView, .MenuBar  .SubMenuView { display: block; list-style: none; }
+.MenuBar .SubMenu { display: none; position: absolute; }
+.NoWrap { white-space: nowrap; word-wrap: normal; }
+.MenuBar .MenuItemContainer { 	position: relative; }
+.rootelem { margin-left: auto; margin-right: auto; }
+.colelem { display: inline; float: left; clear: both; }
+.grpelem { display: inline; float: left; }
+
+.clearfix:after { content: "\0020"; visibility: hidden; display: block; 	height: 0; clear: both; }
+.pointer_cursor { cursor: pointer; }
+
+.preload_images {
+	position: absolute;
+	overflow: hidden;
+	left: -9999px;
+	top: -9999px;
+	height: 1px;
+	width: 1px;
+}
+
+
+#btnContainer{ width: 140px; float: left; top: -2px;}
+#btnMenu{ min-width: 100%; 	position: relative; }
+
+
+.textarea { resize: none; overflow: auto; }
+.wrapped-input, .wid_label { position: absolute; top: 0; left: 0; background: transparent; border: none; color: #ffffff; }
+
+.MenuBar .SubMenuVisible,
+.MenuBarVertical .SubMenuVisible,
+.MenuBar .SubMenu .SubMenuVisible,.popup_element.Active,
+span.actAsPara,.actAsDiv,
+a.nonblock.nontext,
+img.block { display: block; }
+
+input[type="text"] { color: #ffffff; }
+input[type="password"] { color: #ffffff; }
+input[type="submit"] { color: #ffffff; cursor: pointer; }
+input[type="checkbox"] { color: #ffffff; }
+input[type="button"] { color: #ffffff; }
+select option{ color: #000000;  }
+
+:-moz-placeholder {  color: #ffffff; opacity: 1;}
+:-ms-input-placeholder { color:#ffffff; opacity: 1;}
+::-moz-placeholder { color: #ffffff;  opacity: 1; } /* firefox */
+::-webkit-input-placeholder { color: #ffffff; } /* Chrome */
+
+
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    text-align: center;
+}
+
+ #dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+/*     padding: 2px 2px 2px 2px; */
+    border: none;
+    background: transparent url("") no-repeat right center;
+  }
+
+
+.styled-select select {
+	width: 100%;
+	border: none;
+	line-height: 1.5;
+	color: transparent;
+	color: #ffffff;
+	text-shadow: 0 0 0 #000;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+  text-align: center;
+	appearance: none;
+	cursor: pointer;
+	outline: none;
+ 	background: transparent url("") no-repeat scroll 97% 8px;
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background: transparent url("") no-repeat scroll 97% 8px;
+		background-size: 16px 394px;
+	}
+}
+
+/* ===========================================================================*/
+/* Navigation Buttons  */
+#btnMenuItem { width: 100%; min-height: 124px; position: relative; }
+
+/* Add User Button Configurations */
+#u1904 { 	 width: 100%; /* position: fixed;  */ float: left;	top: -2px; z-index: 111;}
+
+#u1543 { width: 100%; border-style: none; border-color: transparent; background-color: #ffffff; padding-bottom: 65px; position: relative; }
+#u1543:hover { background-color: #65C178; margin: 0px; }
+#u1543.MuseMenuActive { background-color: #65C178; margin: 0px; }
+#u1545-5, #u1731-5, #u1812-5 {
+	width: 100%;
+	min-height: 59px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	text-align: center;
+	color: #5D5D5D;
+	font-size: 12px;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+	position: relative;
+	top: 32px;
+}
+
+#u1543:hover #u1545-5, #u1543:active #u1545-5 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 59px;
+	margin: 0px;
+	background: transparent url("../images/about_hover.png") no-repeat center bottom;
+}
+
+#u1543.MuseMenuActive #u1545-5 {
+	border-style: none;
+	border-color: transparent;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 59px;
+	margin: 0px;
+	background: transparent url("../images/about_hover.png") no-repeat center bottom;
+}
+
+#u1543:hover #u1545-5 p { color: #ffffff; visibility: inherit; }
+#u1543:active #u1545-5 p { background-color: #65C178;  color: #ffffff; visibility: inherit; }
+/* Add User Button Configurations */
+/* ===========================================================================*/
+/* Data Sheet Forum Button Configrations  */
+#u1905 { width: 100%; float: left; top: -2px;  }
+
+#u1729 { width: 100%; border-style: none; border-color: transparent; background-color: #FFFFFF; padding-bottom: 65px; position: relative; }
+#u1729:hover { background-color: #007AC3; margin: 0px; }
+#u1729.MuseMenuActive { background-color: #007AC3; margin: 0px; }
+
+#u1729:hover #u1731-5, #u1729:active #u1731-5 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 59px;
+	margin: 0px;
+	background: transparent url("../images/services_hover.png") no-repeat center bottom;
+}
+
+#u1729.MuseMenuActive #u1731-5 {
+	border-style: none;
+	border-color: transparent;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 59px;
+	margin: 0px;
+	background: transparent url("../images/services_hover.png") no-repeat center bottom;
+}
+#u1729:hover #u1731-5 p { color: #FFFFFF; visibility: inherit; padding-top: 21px; }
+#u1729:active #u1731-5 p { color: #FFFFFF; visibility: inherit; 	padding-top: 21px; }
+/* Data Sheet Forum Button Configrations  */
+/* ===========================================================================*/
+/* Effort Sheet Forum Button Configrations */
+#u1906 { 	width: 100%; float: left; top: -2px; }
+
+#u1810 { width: 100%; border-style: none; border-color: transparent; background-color: #FFFFFF; padding-bottom: 65px; position: relative; }
+#u1810:hover { background-color: #D94A3F; margin: 0px; }
+
+#u1810:hover #u1812-5, #u1810:active #u1812-5 {
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 59px;
+	margin: 0px;
+	background: transparent url("../images/portfolio_hover.png") no-repeat center bottom;
+}
+#u1543.MuseMenuActive #u1545-5 p,#u1729.MuseMenuActive #u1731-5 p,#u1810:hover #u1812-5 p { color: #FFFFFF; visibility: inherit; }
+#u1810:active #u1812-5 p { color: #FFFFFF; visibility: inherit; }
+
+/* Effort Sheet Forum Button Configrations */
+/* ===========================================================================*/
+/* Seetings Button Configrations */
+
+
+
+#u1891 {
+	width: 100%;
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	padding-bottom: 65px;
+	position: relative;
+}
+#u1891:hover { background-color: #F89422; margin: 0px; }
+#u1891.MuseMenuActive { background-color: #F89422; 	margin: 0px; }
+#u1893-5 {
+	width: 100%;
+	min-height: 59px;
+	border-style: none;
+	border-color: transparent;
+	text-align: center;
+	color: #5D5D5D;
+	font-size: 12px;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+	position: relative;
+	top: 32px;
+}
+#u1891:hover #u1893-5, #u1891:active #u1893-5 {
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 59px;
+	margin: 0px;
+	background: transparent url("../images/development_hover.png") no-repeat center bottom;
+}
+#u1810.MuseMenuActive #u1812-5 p,#u1891:hover #u1893-5 p { color: #FFFFFF; visibility: inherit; }
+#u1891:active #u1893-5 p { color: #FFFFFF; visibility: inherit; }
+#u1891.MuseMenuActive #u1893-5 p { color: #FFFFFF; visibility: inherit; }
+#u1545,#u1731,#u1812,#u1893 { padding-bottom: 9px; }
+#u1545-3,#u1731-3,#u1812-3,#u1893-3 { padding-top: 21px; }
+.widgetu1212 {
+	width: 250px; height: 54px;
+	border-style: none; border-color: transparent;
+	background-color: transparent;
+	position: relative; left: 1px; 	margin-right: 50px;
+}
+
+.widgetu1212All {
+	width: 432px;
+	border-style: none; border-color: transparent;
+	background-color: transparent;
+	position: relative;
+	vertical-align: middle;
+	padding-left: 3px;
+}
+
+.labelUsr{ height: 20px; }
+.labelUsrText{ color: black; }
+
+.yellowBG{
+
+	border-style: none;
+	border-color: transparent;
+	background-color: #ffb35d;
+	color: #ffffff;
+	font-size: 12px;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	position: relative;
+	text-transform:uppercase;
+}
+
+#u1214-4, #u1214-4W {
+	width: 250px;
+	min-height: 42px;
+	border-style: none;
+	border-color: transparent;
+	background-color: #ffb35d;
+	padding: 6px;
+	color: #ffffff;
+	text-indent: 15px;
+	font-size: 12px;
+	line-height: 3.5;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	position: relative;
+}
+
+
+#u1214-4W { background-color: #ff0000; text-align: center;}
+.widgetu1212W { visibility: hidden; background-color: #ff0000; }
+/* Seetings Button Configrations */
+/* ===========================================================================*/
+.widgetu1212_submit {
+	background-color: #64c178;
+	color: #000000;
+	cursor: pointer;
+	text-transform:uppercase;
+	width: 265px;
+	min-height: 54px;
+	border-style: none;
+	border-color: transparent;
+	color: #000000;
+	font-size: 12px;
+	line-height: 3.5;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	text-transform:uppercase;
+
+}
+.widgetu1212:hover #u1214-4 *, #widgetu1212:focus #u1214-4 *  { color: #000000;}
+
+.widgetu1212:hover #u1214-4 { background-color: #ffffff; padding-top: 6px; padding-bottom: 6px; min-height: 42px;	margin: 0px -10000px 0px 0px; }
+.widgetu1212_submit:hover #u1214-5 * { background-color: rgba(247,11,11,0.94); color: #ffffff; }
+.widgetu1212_submit.focus-st #u1214-5 { background-color: rgba(247,11,11,0.94); }
+
+
+.widgetu1212_input {
+	width: 250px;
+	min-height: 42px;
+	color: #ff0000;
+	font-family: ubuntu, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	padding: 6px;
+
+}
+.widgetu1212.fld-err-st {
+	background-color: transparent;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+	margin: 0px -10000px 0px 0px;
+}
+#u1222-4 {
+	width: 250px;
+	min-height: 42px;
+	border-style: none;
+	border-color: transparent;
+	background-color: #ffb35d;
+	padding: 6px;
+	color: #ffffff;
+	text-indent: 15px;
+	font-size: 12px;
+	line-height: 3.5;
+	font-family: ubuntun, sans-serif;
+	font-weight: 400;
+	position: relative;
+}
+.warnings {
+	width: 250px;
+	color: #ffffff;
+	text-indent: 15px;
+	font-size: 12px;
+	font-family: ubuntu, sans-serif;
+	font-weight: 400;
+	position: relative;
+}
+
+.effortCode { -webkit-user-select: none; }
+
+
+/* CheckBox  */
+/*input[type=checkbox] {  display:none;  }
+
+input[type="checkbox"] + label span {
+    background: url("../images/check_radio_sheet.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+    height: 19px;
+    vertical-align: middle;
+    width: 19px;
+}
+input[type="checkbox"]:checked + label span {
+    background:url('../images/check_radio_sheet.png') -19px top no-repeat;
+}*/
+
+.labelUsrText{ height: 20px; }
+.usrLblBtn{ height: 55px; }
+
+.logout {
+	width: 	32px;
+	height: 32px;
+	display: block;
+	padding-left: 0px; margin-left: 75px;
+	float: left;
+	background:transparent url( '../images/Logout.png') left no-repeat;
+}
+
+.logout:hover { background-image: url( '../images/Logout_hover.png' ); }
+
+.usersetting {
+	width: 	32px;
+	height: 32px;
+	display: block;
+	margin-left: 38px;
+	background:transparent url( '../images/userSettings.png') center no-repeat;
+}
+.usersetting:hover { background-image: url( '../images/userSettings_hover.png' ); }
+
+
+#adduserLine{ width: 100%; height: 2px; background-color: #65C178; }
+#dsfLine{ width: 100%; height: 2px; background-color: #007AC3; }
+#esfLine{ width: 100%; height: 2px; background-color: #D94A3F; }
+#stsLine{ width: 100%; height: 2px; background-color: #F89422; }
+
+
+
+
+/* ===========================================================================*/
+/* Forum Stuff */
+/* ===========================================================================*/
+.forumContanier{ width: 840px; min-width: 840px; height: 100%; margin: 0 auto;}
+.rowWide { width: 80%; margin: 0 auto; height: 15px; margin-bottom: 15px; padding-left: 140px; }
+.bigrow { width: 80%; margin: 0 auto; height: 15px; margin-bottom: 15px; padding-left: 140px; }
+.checkBoxes { width: 350px; float: left; }
+.checkBoxMe { background-color: #FFB35D; width: 175px;  margin: 1.5px; height: 15px; float: left;  padding: 6px; color: #ffffff; font-family: ubuntu; font-size: 12px; font-weight: 400;  }
+.enteredBy{ width: 285px; background-color: #007ac3; text-align: center; text-decoration: none; cursor: pointer; }
+.checkBoxLbl{ margin-left: 5px; }
+.chkBox{ height: 15px; }
+
+.xSize { width: 500px; height: 50px; }
+
+
+.inputFrame {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    height: 15px;
+    left: 1px;
+    margin-right: 15px;
+    position: relative;
+    width: 120px;
+}
+.inputFrame-6{ width: 40px; background-color: #FFC170; }
+.inputFrame-55{ width: 55px; background-color: #FFC170; }
+.inputFrame-80{ width: 80px; background-color: #FFC170; }
+.inputFrame-126{ width: 126px; }
+.inputFrame-175{ width: 175px; }
+
+.wid_input:hover, .wid_input:focus  { color: #000000; font-style: normal; }
+
+/*This is blocked because of effort forum*/
+/*.textFrame:hover, .textFrame:focus { background-color: white; }*/
+
+
+
+.dataRow:hover, .dataRow:focus {
+	background-color: #FFD48A;
+	font-style: normal;
+	cursor: pointer;
+}
+
+.textFrame, .dataSheetBtn {
+	background-color: #FFB35D;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    color: #FFFFFF;
+    font-family: ubuntu, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    min-height: 15px;
+    padding: 6px;
+    position: relative;
+    width: 120px;
+}
+
+
+
+.textFrame-6{ width: 40px; background-color: #FFC170; }
+.textFrame-55{ width: 55px; background-color: #FFC170; }
+.textFrame-80{ width: 80px; background-color: #FFC170; }
+.textFrame-126{ width: 126px; }
+.textFrame-175{ width: 175px; }
+
+.wid_input {
+    color: #FFFFFF;
+    font-family: ubuntu, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    min-height: 15px;
+    padding: 6px;
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+.wid_input-6{ width: 40px; text-align: center; background-color: #FFC170; }
+.wid_input-55{ width: 55px; text-align: center; background-color: #FFC170; }
+.wid_input-80{ width: 80px; text-align: center; background-color: #FFC170; }
+.wid_input-126{ width: 126px; }
+.wid_input-175{ width: 175px; }
+
+.dataSheetBtn { background-color: #007AC3; }
+.dataSheetBtn:hover, .dataSheetBtn:focus { background-color: red;}
+.dataSheetBtnText { padding-top: 6px; }
+.dataSheetBtnText:hover, .dataSheetBtnText:focus { color: #ffffff; }
+
+.effSheetBtn { background-color: #d94a3f; }
+.effSheetBtn:hover, .dataSheetBtn:focus { background-color: red;}
+.effSheetBtnText { padding-top: 16px; }
+.effSheetBtnText:hover, .dataSheetBtnText:focus { color: #ffffff; }
+
+.widgetu1212.fld-err-st #u1214-4 { background-color: #FFFFFF; padding-top: 6px; padding-bottom: 6px; min-height: 42px; margin: 0px -10000px 0px 0px; }
+.widgetu1212.fld-err-st #u1214-4 *  { color: #D7244C; font-style: normal; }
+
+
+.widgetu1212:hover #widgetu1212_input,
+.widgetu1212.focus-st #widgetu1212_input,
+.widgetu1212.fld-err-st #widgetu1212_input,
+.widgetu1212:hover #widgetu1212_prompt,
+.widgetu1212.focus-st #widgetu1212_prompt,
+.widgetu1212.fld-err-st #widgetu1212_prompt { padding-top: 6px; padding-bottom: 6px; }
+.widgetu1212.non-empty-st #widgetu1212_prompt { visibility: hidden; }
+#page .verticalspacer { clear: both; }

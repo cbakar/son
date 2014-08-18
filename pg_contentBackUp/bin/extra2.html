@@ -1,0 +1,99 @@
+<?php 	ob_start(); error_reporting(E_ALL); ini_set('display_errors', 1); ?>
+<!-- General Print Out -->
+
+<?php 
+
+
+	// <!-- Establishing the Database Connection -->
+	function connectDB() {
+		if( !@include_once ( 'db/db_connect.php' ) ) {
+			throw new Exception( 'Failed to connect to Database' );	
+		}
+		return true; 
+	}
+
+	try{ connectDB(); }
+	catch( Exception $e ) {	echo 'Message: ' .$e->getMessage(); }
+
+
+	/* Enter a new record */
+	$sql = "SELECT harvest_number, fisher_name, bt_size, harvest_date FROM `forum_harvest`";
+	$result_harvestTable = mysql_query( $sql );	
+	if( !$result_harvestTable ) { closeDB(); header( 'Location: ../usrPg.php?id=hdaw197ent_err'); }
+	else { 
+		echo 	'<div class="rowWide">
+					<div class="inputFrame grpelem" style="text-align:center;">
+						<span class="textFrame grpelem" style="text-align:center;">
+							HARVEST NUMBER
+						</span>
+					</div>
+					<div class="inputFrame grpelem" style="text-align:center;">
+						<span class="textFrame grpelem" style="text-align:center;">
+							FISHERMAN NAME
+						</span>
+					</div>
+					<div class="inputFrame grpelem" style="text-align:center;">
+						<span class="textFrame grpelem" style="text-align:center;">
+							BOAT SIZE
+						</span>
+					</div>
+					<div class="inputFrame grpelem" style="text-align:center;">
+						<span class="textFrame grpelem" style="text-align:center;">
+							HARVEST DATE
+						</span>
+					</div>
+				</div>';
+
+			while( $row = mysql_fetch_array( $result_harvestTable )){
+
+				echo 	'<form action="bin/addData_Individual.php" method="post">
+							<div class="rowWide">';
+				echo 				'<div class="inputFrame grpelem" style="text-align:center;">
+										<span class="textFrame grpelem" style="text-align:center;">
+											<input class="wrapped-input wid_input" type="submit" name="harvestNumber" value="';
+				echo 							$row['harvest_number'];
+				echo 					'"/></span>
+	  								</div>
+								
+									<div class="inputFrame grpelem" style="text-align:center;">
+										<span class="textFrame grpelem" style="text-align:center;">
+											<input class="wrapped-input wid_input" type="submit" name="harvestNumber" value="';
+	  			echo						$row['fisher_name'];
+	  			echo					'"/></span>
+	  								</div>
+
+									<div class="inputFrame grpelem" style="text-align:center;">
+										<span class="textFrame grpelem" style="text-align:center;">
+											<input class="wrapped-input wid_input" type="submit" name="harvestNumber" value="';
+	  			echo						$row['bt_size'];
+	  			echo					'"/></span>
+	  								</div>
+
+	  								<div class="inputFrame grpelem" style="text-align:center;">
+										<span class="textFrame grpelem" style="text-align:center;">
+											<input class="wrapped-input wid_input" type="submit" name="harvestNumber" value="';
+	  			echo 							$row['harvest_date'];
+	  			echo  					'"/></span>
+	  								</div>
+	  							</a>
+  							</div>
+  						</form>';
+  			}
+
+			
+			//closeDB(); header( 'Location: ../usrPg.php?id=hdaw1976ent_added'); 
+		}
+	//}
+
+
+// <!-- Close the Database Connection -->
+	function closeDB() {
+		if( !@include_once ( 'db/db_close.php' ) ) {
+			throw new Exception( 'Failed to close the Database' ); 
+		}
+		return true; 
+	}
+	try { closeDB(); }
+	catch ( Exception $e) { echo 'Message: ' .$e->getMessage(); }
+?>
+
