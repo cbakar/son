@@ -1,0 +1,46 @@
+
+ /* Resets for ul and li in menus */
+.MenuBar  .MenuBarView, .MenuBar  .SubMenuView { display: block; list-style: none; }
+.MenuBar .SubMenu { display: none; position: absolute; }
+.NoWrap { white-space: nowrap; word-wrap: normal; }
+.MenuBar .MenuItemContainer { 	position: relative; }
+.rootelem { margin-left: auto; margin-right: auto; }
+.colelem { display: inline; float: left; clear: both; }
+.grpelem { display: inline; float: left; }
+
+.clearfix:after { content: "\0020"; visibility: hidden; display: block; 	height: 0; clear: both; }
+.pointer_cursor { cursor: pointer; }
+
+.preload_images {
+	position: absolute;
+	overflow: hidden;
+	left: -9999px;
+	top: -9999px;
+	height: 1px;
+	width: 1px; }
+
+
+
+.textarea { resize: none; overflow: auto; }
+.wrapped-input, .wid_label { position: absolute; top: 0; left: 0; background: transparent; border: none; color: #ffffff; } 
+
+.MenuBar .SubMenuVisible, 
+.MenuBarVertical .SubMenuVisible, 
+.MenuBar .SubMenu .SubMenuVisible,.popup_element.Active,
+span.actAsPara,.actAsDiv,
+a.nonblock.nontext,
+img.block { display: block; }
+
+input[type="text"] { color: #ffffff; }
+input[type="password"] { color: #ffffff; }
+input[type="submit"] { color: #ffffff; height: 54px; }
+input[type="checkbox"] { color: #ffffff; }
+select option{ color: #000000;  }
+
+
+:-moz-placeholder {  color: #ffffff; opacity: 1;}
+:-ms-input-placeholder { color:#ffffff; opacity: 1;}
+::-moz-placeholder { color: #ffffff;  opacity: 1; } /* firefox */
+::-webkit-input-placeholder { color: #ffffff; } /* Chrome */
+
+

@@ -1,0 +1,50 @@
+
+CREATE TABLE `forum_effort` (
+  `id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'index counter',
+  `user_name` varchar(20) NOT NULL,
+  `effort_number` varchar(30) NOT NULL,
+  `fisher_name` varchar(50) NOT NULL,
+  `bt_size` varchar(20) NOT NULL,
+  `effort_date` date NOT NULL,
+  `entered_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `grid` int(10) DEFAULT NULL,
+  `latlong` varchar(25) DEFAULT NULL,
+  `grtp` varchar(20) DEFAULT NULL,
+  `grlen5` float DEFAULT NULL,
+  `grhtm` float DEFAULT NULL,
+  `mesh5` float DEFAULT NULL,
+  `grdep5` float DEFAULT NULL,
+  `sidep5` float DEFAULT NULL,
+  `setype` varchar(20) DEFAULT NULL,
+  `effdur` time DEFAULT '00:00:00',
+
+  PRIMARY KEY (`effort_number`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+
+--
+-- Dumping data for table `forum_effort`
+--
+
+INSERT INTO `forum_effort` VALUES(4, 'cem', '2014-ESF-1404696410', 'CEM BAKAR', 'TUG', '2014-07-11', '2014-07-06 21:27:22', 123, '123', 'SE', 12, 12, 12, 12, 12, 'TEST', '00:00:32', 'YES', 'YES', 'YES', 'sdfasdfa asdfasdfs');
+INSERT INTO `forum_effort` VALUES(5, 'cem', '2014-ESF-1404697009', 'CEM BAKAR', 'TUG', '2014-07-16', '2014-07-06 21:37:30', 1232, '65548-7276', 'TEST', 65, 42, 65, 44, 5, 'KYTE', '00:00:35', 'YES', 'YES', 'YES', 'Cem Bakar');
+INSERT INTO `forum_effort` VALUES(6, 'cem', '2014-ESF-1404697730', 'CEM BAKAR', 'TUG', '2014-07-23', '2014-07-06 21:49:50', 123, '1234', 'SE', 1235, 1236, 1237, 1238, 1239, 'BOTTOM', '00:00:34', 'YES', 'YES', 'YES', 'cem bakar');
+INSERT INTO `forum_effort` VALUES(8, 'cem', '2014-HST-1404745146', 'CEM BAKAR', 'PUNT', '2014-07-16', '2014-07-07 10:59:35', 112, '121', 'PD', 123, 123, 123, 123, 123, 'KYTE', '00:01:23', 'NO', 'NO', 'NO', 'dsfasdf asdf');
+INSERT INTO `forum_effort` VALUES(9, 'cem', '2014-HST-1405384760', 'DAN GILLIS', 'PUNT', '2014-07-15', '2014-07-14 20:40:04', 123, '123', 'PD', 123, 123, 123, 12, 12, 'BOTTOM', '00:00:12', 'YES', 'YES', 'YES', 'Ali Veli');
+INSERT INTO `forum_effort` VALUES(10, 'cem', '2014-HST-1405404705', 'CEM BAKAR', 'TUG', '2014-07-01', '2014-07-15 02:15:32', 1212, '12', 'PD', 12, 12, 12, 12, 12, 'CAN', '00:00:12', 'YES', 'NO', 'NO', 'sadfasd ');
+INSERT INTO `forum_effort` VALUES(12, 'cem', '2014-HST-1405405036', 'DAN GILLIS', 'TUG', '2014-07-09', '2014-07-15 02:27:33', 12, '12', 'PD', 1235, 12, 12, 12, 12, 'CAN', '00:00:12', 'YES', 'NO', 'NO', 'Cem Bakar');
+INSERT INTO `forum_effort` VALUES(11, 'cem', '2014-HST-1405405395', 'DAN GILLIS', 'TUG', '2014-07-08', '2014-07-15 02:26:56', 12, '12', 'PD', 12, 12, 12, 12, 12, 'KYTE', '00:00:12', 'YES', 'NO', 'NO', 'cem bakar');
+INSERT INTO `forum_effort` VALUES(13, 'cem', '2014-HST-1405408365', 'ALI VELI KIRKDOKUZELLI', 'TUG', '2014-07-09', '2014-07-15 03:22:54', 0, 'Not Entered', 'Not Entered', 0, 0, 0, 0, 0, 'Not Entered', '00:00:00', 'NO', 'NO', 'NO', 'bgbg bgbg');
+INSERT INTO `forum_effort` VALUES(17, 'cem', '2014-HST-1405409020', 'ALI VELI KIRKDOKUZELLI', 'TUG', '2014-07-16', '2014-07-15 03:24:02', 123, '123', 'PD', 123, 123, 12, 12, 12, 'KYTE', '00:01:23', 'YES', 'NO', 'NO', 'asdasd asdas ');
+INSERT INTO `forum_effort` VALUES(19, 'cem', '2014-HST-1405409428', 'ALI VELI KIRKDOKUZELLI', 'TUG', '2014-07-29', '2014-07-15 03:30:49', 123, '123', 'SE', 123, 12, 12, 12, 123, 'BOTTOM', '00:01:23', 'YES', 'NO', 'NO', 'sfsdf asdf ');
+INSERT INTO `forum_effort` VALUES(20, 'cem', '2014-HST-1405645533', 'CEM BAKAR', 'TUG', '2014-07-09', '2014-07-17 21:07:03', 1838, '185', 'GL', 12, 12, 12, 12, 12, 'KYTE', '00:00:12', 'NO', 'NO', 'NO', 'tt tt');
+INSERT INTO `forum_effort` VALUES(7, 'cem', '2014-HST-DS-1404703699', 'CEM BAKAR', 'TUG', '2014-07-08', '2014-07-06 23:28:46', 123, '1231', 'PD', 12, 12, 12, 12, 12, 'KYTE', '00:00:12', 'NO', 'NO', 'NO', 'sfff sdfsd');
+ 
+
+
+
+
+  `fbw` enum('YES','NO') NOT NULL,
+  `bwe` enum('YES','NO') NOT NULL,
+  `bwff` enum('YES','NO') NOT NULL,
+  `signed_by` varchar(50) NOT NULL,

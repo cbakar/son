@@ -1,0 +1,424 @@
+<table class="tg">
+  <tr class="row[]">
+    <th>
+        <div class="inputFrame clearfix grpelem">
+            <span class="textFrame clearfix grpelem">
+                <input class="wrapped-input wid_input" type="text"  placeholder="Effort #" disabled="true" />
+            </span>
+        </div>
+    </th>
+    <th colspan="3">
+        <div class="inputFrame clearfix grpelem" style="width:150px;">
+            <span class="textFrame clearfix grpelem" style="width:150px;">
+                <input class="wrapped-input wid_input" id="effortNumberTT" type="text" name="effortNumber" value="<?php $date = date_create(); echo ( date("Y") . '-HSF-' . date_timestamp_get($date) )?>" style="width:150px;" disabled="true" />
+            </span>
+        </div>
+    </th>
+    <th colspan="4">
+        <div class="inputFrame clearfix grpelem" style="width:150px;">
+            <span class="textFrame grpelem dataSheetBtn" style="width:205px;">
+                <input class="wrapped-input wid_input dataSheetBtnText" type="submit" tabindex="17" name="enterSubmit" value="ENTER" style="width:130px; height:20px;" />
+            </span>
+        </div>
+    </th>
+    <th colspan="3"></th>
+  </tr>
+  <tr class="row[]">
+    <td>
+        <div class="inputFrame  clearfix grpelem">
+            <span class="textFrame  grpelem">
+	        <div class="inputFrame clearfix grpelem onoffswitch">
+	            <input type="checkbox"  name="onoffswitch[]" value="2" class="onoffswitch-checkbox" id="myonoffswitch2">
+	            <label class="onoffswitch-label" for="myonoffswitch2">
+	                <span class="onoffswitch-inner"></span>
+	                <span class="onoffswitch-switch"></span>
+	            </label>
+	        </div>
+	        <div class="inputFrame clearfix grpelem onoffswitch">
+	            <input type="checkbox"  name="onoffswitch[]" value="3" class="onoffswitch-checkbox" id="myonoffswitch3">
+	            <label class="onoffswitch-label" for="myonoffswitch3">
+	                <span class="onoffswitch-inner"></span>
+	                <span class="onoffswitch-switch"></span>
+	            </label>
+	        </div>
+	        <div class="inputFrame clearfix grpelem onoffswitch">
+	            <input type="checkbox"  name="onoffswitch[]" value="4" class="onoffswitch-checkbox" id="myonoffswitch4">
+	            <label class="onoffswitch-label" for="myonoffswitch4">
+	                <span class="onoffswitch-inner"></span>
+	                <span class="onoffswitch-switch"></span>
+	            </label>
+	        </div>
+	        <div class="inputFrame clearfix grpelem onoffswitch">
+	            <input type="checkbox"  name="onoffswitch[]" value="5" class="onoffswitch-checkbox" id="myonoffswitch5">
+	            <label class="onoffswitch-label" for="myonoffswitch5">
+	                <span class="onoffswitch-inner"></span>
+	                <span class="onoffswitch-switch"></span>
+	            </label>
+	        </div>
+	        <div class="inputFrame clearfix grpelem onoffswitch">
+	            <input type="checkbox"  name="onoffswitch[]" value="6" class="onoffswitch-checkbox" id="myonoffswitch6">
+	            <label class="onoffswitch-label" for="myonoffswitch6">
+	                <span class="onoffswitch-inner"></span>
+	                <span class="onoffswitch-switch"></span>
+	            </label>
+	        </div>
+	        <div class="inputFrame clearfix grpelem onoffswitch">
+	            <input type="checkbox"  name="onoffswitch[]" value="7" class="onoffswitch-checkbox" id="myonoffswitch7">
+	            <label class="onoffswitch-label" for="myonoffswitch7">
+	                <span class="onoffswitch-inner"></span>
+	                <span class="onoffswitch-switch"></span>
+	            </label>
+	        </div>
+	        <div class="inputFrame clearfix grpelem onoffswitch">
+	            <input type="checkbox"  name="onoffswitch[]" value="8" class="onoffswitch-checkbox" id="myonoffswitch8">
+	            <label class="onoffswitch-label" for="myonoffswitch8">
+	                <span class="onoffswitch-inner"></span>
+	                <span class="onoffswitch-switch"></span>
+	            </label>
+	        </div>
+	        <div class="inputFrame clearfix grpelem onoffswitch">
+	            <input type="checkbox"  name="onoffswitch[]" value="9" class="onoffswitch-checkbox" id="myonoffswitch9">
+	            <label class="onoffswitch-label" for="myonoffswitch9">
+	                <span class="onoffswitch-inner"></span>
+	                <span class="onoffswitch-switch"></span>
+	            </label>
+	        </div>
+	        <div class="inputFrame clearfix grpelem onoffswitch">
+	            <input type="checkbox"  name="onoffswitch[]" value="10" class="onoffswitch-checkbox" id="myonoffswitch10">
+	            <label class="onoffswitch-label" for="myonoffswitch10">
+	                <span class="onoffswitch-inner"></span>
+	                <span class="onoffswitch-switch"></span>
+	            </label>
+	        </div>
+
+
+
+
+		<div class="rowWide">
+			<div class="inputFrame clearfix grpelem styled-select">
+				<span class="textFrame clearfix grpelem">
+					<select  class="wrapped-input wid_input" name="species"  style="padding-top: 18px;" tabindex="13">
+						<option value="81" selected="selected">SPECIES - LKC</option>
+						<option value="-1">------------------------------------</option>
+				 		<option value="81">081-LKC</option>
+						<option value="91">091-WHT</option>
+						<option value="94">094-BLT</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="inputFrame clearfix grpelem styled-select">
+				<span class="textFrame clearfix grpelem">
+					<select  class="wrapped-input wid_input" name="formType"  style="padding-top: 18px;" tabindex="14">
+						<option value="1" selected="selected">FORM - ROUND</option>
+						<option value="-1">------------------------------------</option>
+				 		<option value="1">ROUND</option>
+						<option value="2">DRESSED</option>
+						<option value="3">FILLETED</option>
+					</select>
+				</span>
+			</div>
+
+			<div class="inputFrame clearfix grpelem">
+				<span class="textFrame clearfix grpelem">
+					<input class="wrapped-input wid_input" type="text" tabindex="15" name="weight" required="required" maxlength="5" placeholder="WEIGHT" onkeypress="return isNumber(event)"/>
+				</span>
+			</div>
+
+			<div class="inputFrame clearfix grpelem styled-select">
+				<span class="textFrame clearfix grpelem">
+					<select  class="wrapped-input wid_input" name="units"  style="padding-top: 18px;" tabindex="16">
+						<option value="1" selected="selected">UNITS - KILOGRAMS</option>
+						<option value="-1">------------------------------------</option>
+				 		<option value="1">KILOGRAMS</option>
+						<option value="2">POUNDS</option>
+					</select>
+				</span>
+			</div>
+		</div>
+		<!-- Row five ended -->
+
+		<div class="rowWide">
+			<div class="checkBoxes">
+				<div class="checkBoxMe">
+					<input type="checkbox" id="c1" name="fbw" tabindex="17"  /><label for="c1" tabindex="17" ><span></span>Fish Boxes Weighed</label>
+					 <!-- <input type='checkbox' name='thing' value='valuable1' id="thing1" data-bind="checked: chk"/><label for="thing1"></label><label for="thing1">Visible label 1</label> -->
+    			</div>
+				<div class="checkBoxMe">
+					<input type="checkbox" id="c2" name="bwe" tabindex="18" /><label for="c2"><span></span>Box Weights Estimated</label>
+				</div>
+				<div class="checkBoxMe">
+					<input type="checkbox" id="c3" name="bwff" tabindex="19" /><label for="c3"><span></span>Box Weights from Fishbuyer</label>
+    			</div>
+    			<div class="checkBoxMe" style="width: 687px; margin-bottom: 15px; height: 20px; padding-top: 1px; padding-left: 5px;" >
+					I, hereby verify that my catch has been Assessed
+					<input type="text" name="myName" required="required" tabindex="20" maxlength="25" placeholder="Type your name for signature" style="margin-left:5px; padding-top: 0px; margin-top: 2px; color: #000000;" />
+					<i>Type your name for signature.</i>
+    			</div>
+
+			</div>
+
+			<div class="inputFrame clearfix grpelem">
+				<span class="textFrame grpelem effSheetBtn">
+					<input class="wrapped-input wid_input dataSheetBtnText" type="submit" tabindex="21" name="addSampleSubmit" value="ADD A NEW SAMPLE" />
+				</span>
+			</div>
+
+			<div class="inputFrame clearfix grpelem">
+				<span class="textFrame grpelem effSheetBtn">
+					<input class="wrapped-input wid_input dataSheetBtnText" type="submit" tabindex="22" name="enterSubmit" value="ENTER" />
+				</span>
+			</div>
+		</div>
+
+		<div class="bigrow">
+			<div class="clearfix grpelem widgetu1212 widgetu1212W"  style="width: 676px; left: 0px; right: 0px; margin-right: 0px;">
+				<span class="clearfix grpelem" id="u1214-4W" style="width:100%; left: 0px; margin-right: 0px; right: 0px;
+					<?php
+						if( isset( $_GET[ 'id' ] ) ) {
+							$id = $_GET[ 'id' ];
+							if( $id == 'w345ent_add' ){ echo 'visibility: visible; background-color: #d94a3f;"> Record is added.'; }
+							if( $id == 'w345ent_err' ) { echo 'visibility: visible; background-color: #FF0000;"> There was an error! Record cannot be added.'; }
+							if( $id == 'w197ans_add' ) { echo 'visibility: visible; background-color: #d94a3f;"> New Sample is added.'; }
+							if( $id == 'w197ans_err' ) { echo 'visibility: visible; background-color: #FF0000;"> There was an error! New Sample cannot be added.'; }
+						} else { echo '">'; }
+					?>
+				</span>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+
+                <input class="wrapped-input wid_input" type="text" name="sampleNumber" placeholder="Sample #" disabled="true" />
+            </span>
+        </div>
+    </td>
+    <td>
+        <div class="inputFrame clearfix grpelem onoffswitch">
+            <input type="checkbox"  name="onoffswitch" value="value1" class="onoffswitch-checkbox" id="myonoffswitch">
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+    </td>
+    <td>
+        <div class="inputFrame clearfix grpelem onoffswitch">
+            <input type="checkbox"  name="onoffswitch" value="value2"class="onoffswitch-checkbox" id="myonoffswitch">
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+
+
+
+
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
